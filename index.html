@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Ember Ottawa - June 2014</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/ember.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+			.force-element-demo:active{
+				color: HotPink;
+			}
+			.force-element-demo:focus{
+				color: red;
+			}
+			.reveal i {
+				font-style: normal;
+			}
+			.reveal .fa-icon,
+			.reveal [class^="fa-"],
+			.reveal [class*=" fa-"]  {
+			  font-family: 'FontAwesome';
+			}
+
+			a .fa{
+				font-size: 0.5em;
+			}
+		</style>
+	</head>
+
+	<body>
+
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+
+<!----- Section ------>
+				<section>
+					<section data-track="welcome">
+						<h1>Welcome</h1>
+						<h4>to</h4>
+						<a target="_blank" class="test" href="http://www.meetup.com/Ember-js-Ottawa/">
+							<img class="image" src="img/ember-ottawa.jpeg" >
+						</a>
+					</section>
+				</section>
+
+<!----- Section ------>
+
+				<section>
+					<section data-track="welcome">
+						<h2>The Plan</h2>
+						<br/>
+						<ul>
+							<li>Brief Introductions</li>
+							<li>Last Month in Ember - @Owain</li>
+							<li>Hacker Hours</li>
+						</ul>
+					</section>
+
+				</section>
+
+<!----- Section ------>
+
+				<section>
+					<section data-track="welcome">
+						<h2>Sponsers</h2>
+					</section>
+					<section data-track="welcome">
+						<a target="_blank" class="test" href="http://bv02.com">
+							<img class="image" src="img/bv02-logo.jpeg" >
+						</a>
+						<p>Space by <a target="_blank" href="http://bv02.com">bv02</a></p>
+					</section>
+					<section data-track="welcome">
+						<a target="_blank" class="test" href="http://www.bv02.com/device-lab">
+							<img class="image" src="img/odl.png" >
+						</a>
+						<p><a target="_blank" href="http://www.bv02.com/device-lab">Open Device Lab</a></p>
+					</section>
+					<section data-track="welcome">
+						<a target="_blank" class="test" href="http://toushay.com">
+							<img class="image" src="img/toushay-logo.png" >
+						</a>
+						<p>Food & Drinks by <a target="_blank" href="http://toushay.com">Toushay</a></p>
+						<small>Please drink (and eat!) responsibly - don't drink & drive!</small>
+					</section>
+
+				</section>
+
+<!----- Section ------>
+
+				<section>
+					<section data-track="welcome">
+						<h2>Introductions</h2>
+						<br/>
+						<ul>
+							<li>Your Name</li>
+							<li>What you do</li>
+							<li>Your exprience with Ember</li>
+							<li>What you hope to get out of this meetup</li>
+						</ul>
+					</section>
+				</section>
+
+<!----- Section ------>
+				<section>
+					<section data-track="title">
+						<h2>Last Month in Ember</h2>
+					</section>
+				</section>
+
+<!----- Section ------>
+
+				<section>
+					<section data-track="title">
+						<h3>Releases</h3>
+					</section>
+
+					<section data-track="title">
+						<h4>
+							<a href="https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi?hl=en">Ember Inspector v1.3</a>
+						</h4>
+						<img src="https://cloud.githubusercontent.com/assets/1061742/2809193/118ac7d0-cd5f-11e3-8bae-7ea805c6b71d.png" alt="">
+						<ul>
+							<li>Developer tool that allows you to inspect Ember objects in your app</li>
+							<li>New render performance tab (<a href="https://github.com/emberjs/ember-inspector/blob/master/CHANGELOG.md#ember-inspector-131">changelog</a>)</li>
+							<li>Available for <a href="https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi?hl=en">Chrome</a> and <a href="">Firefox</a></li>
+						</ul>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="https://github.com/emberjs/data/blob/v1.0.0-beta.8/CHANGELOG.md">Ember Data v1.0.0 Beta 8</a>
+						</h4>
+						<br/>
+						<ul>
+							<li>A library for robustly managing model data in your Ember apps</li>
+							<li>Lots of bug fixes & imporovements (<a href="https://github.com/emberjs/data/blob/v1.0.0-beta.8/CHANGELOG.md">changelog</a>)</li>
+							<li><a href="http://emberjs.com/blog/2014/03/18/the-road-to-ember-data-1-0.html">The Road To Ember Data 1.0</a> blog post</li>
+							<li><a href="http://confreaks.com/videos/3300-emberconf2014-ember-data-and-the-way-forward">Ember Data and the Way Forward</a> - Igor Terzic EmberConf talk</li>
+							</ul>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="https://github.com/stefanpenner/ember-cli/blob/master/CHANGELOG.md#0028">Ember CLI v0.0.28</a>
+						</h4>
+						<br/>
+						<ul>
+							<li>Tooling for Ember apps</li>
+							<li>Very early alpha & moving quickly</li>
+							<li>Based off <a href="https://github.com/stefanpenner/ember-app-kit">Ember App Kit</a></li>
+							<li>Features:
+								<ul>
+									<li>Sane project structure and defaults</li>
+									<li><a href="https://github.com/broccolijs/broccoli">Broccoli</a> based build/asset pipeline</li>
+									<li>ES6 Modules & module aware resolver</li>
+									<li>Builds, concatonates & minifies assets via <a href="http://gruntjs.com/">Grunt</a></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="">Ember v1.6.0?</a>
+						</h4>
+						<br/>
+						<ul>
+							<li></li>
+							<li>Ember v1.7.0 Beta 1 released simultaneously</li>
+							<li>Performance boosts, small improvements & bug fixes (<a href="https://github.com/emberjs/ember.js/blob/master/CHANGELOG.md">changelog</a>)</li>
+						</ul>
+					</section>
+				</section>
+
+<!----- Section ------>
+
+				<section>
+					<section data-track="title">
+						<h3>Ember Features</h3>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="">QueryParams</a>
+						</h4>
+						<br/>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="">HTMLBars</a>
+						</h4>
+						<br/>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</section>
+				</section>
+
+<!----- Section ------>
+
+				<section>
+					<section data-track="title">
+						<h3>Reading List</h3>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="">Ember Data v1.0.0 Beta 8</a>
+						</h4>
+						<br/>
+						<p>
+
+						</p>
+					</section>
+				</section>
+
+<!----- Section ------>
+
+				<section>
+					<section data-track="title">
+						<h3>Videos</h3>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="https://www.youtube.com/watch?v=yLyyXHhSl8w">The Road to Web Components - Tom Dale & EmpireJS</a>
+						</h4>
+						<br/>
+						<p>
+							<iframe width="640" height="360" src="//www.youtube.com/embed/yLyyXHhSl8w?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+						</p>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="http://vimeo.com/96508134">No more `grunt watch`: Modern build workflows with Broccoli - Jo Liss</a>
+						</h4>
+						<br/>
+						<p>
+							<iframe src="//player.vimeo.com/video/96508134" width="700" height="381" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="https://www.youtube.com/watch?v=XQ0FZSgWArc">Ember.js NYC, April 2014 </a>
+						</h4>
+						<br/>
+						<p>
+							<iframe width="854" height="510" src="//www.youtube.com/embed/XQ0FZSgWArc" frameborder="0" allowfullscreen></iframe>
+						</p>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="https://www.youtube.com/watch?v=7twifrxOTQY">Ember without Ember Data - Robin Ward</a>
+						</h4>
+						<br/>
+						<p>
+							<iframe width="854" height="510" src="//www.youtube.com/embed/7twifrxOTQY" frameborder="0" allowfullscreen></iframe>
+						</p>
+					</section>
+
+				</section>
+
+<!----- Section ------>
+
+				<section>
+					<section data-track="title">
+						<h3>Code</h3>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="https://github.com/realityendshere/emberella-component-blueprint">Emberella Component Blueprint</a>
+						</h4>
+						<br/>
+						<ul>
+							<li>A starting point for creating new, more portable <code>Ember.Components</code>.</li>
+							<li>Features:
+								<ul>
+									<li>Write ES6 Modules, distribute AMD, CJS or Globals</li>
+									<li>Broccoli to build</li>
+									<li>Testem to test</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="http://instructure.github.io/ic-ember/"><code>{{ic-components}}</code></a>
+						</h4>
+						<br/>
+						<ul>
+							<li>Accessible & high quality <code>Ember.Components</code>
+								<ul>
+									<li><code>{{ic-modal}}</code></li>
+									<li><code>{{ic-aoutocomplete}}</code></li>
+									<li><code>{{ic-menu}}</code></li>
+									<li><code>{{ic-droppable}}</code></li>
+									<li><code>{{ic-tabs}}</code></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="http://billdami.com/ember-spin-box/">Ember Spin Box</a>
+						</h4>
+						<br/>
+						<ul>
+							<li>A lightweight and versatile spin box <code>Ember.Component</code></li>
+						</ul>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="http://emberui.com/">Ember UI</a>
+						</h4>
+						<a href="http://emberui.com/">
+							<img src="http://blog.venn.lc/public/images/posts/2014-09/emberui.png" alt="">
+						</a>
+						<br/>
+						<q>"A component library for crafting ambitious interfaces."</q>
+
+					</section>
+				</section>
+
+<!----- Section ------>
+
+				<section>
+					<section data-track="title">
+						<h3>Events</h3>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="https://emberfest.eu/">EmberFest 2014</a>
+						</h4>
+						<a href="https://emberfest.eu/">
+							<img src="https://emberfest.eu/images/logo.png" alt="">
+						</a>
+						<br/>
+						<ul>
+							<li>26th – 29th August</li>
+							<li>Barcelona, Spain</li>
+							<li>Coupon Code: <em>"emberweekly"</em> - 16% off</li>
+						</ul>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="http://wickedgoodember.com/">Wicked Good Ember Conf</a>
+						</h4>
+						<a href="http://wickedgoodember.com/">
+							<img src="https://pbs.twimg.com/profile_images/444534357856751616/RCf7kdbN.png" alt="">
+						</a>
+						<br/>
+						<ul>
+							<li>17th June</li>
+							<li>Boston, MA</li>
+						</ul>
+					</section>
+					<section data-track="title">
+						<h4>
+							<a href="http://emberjshangout.com/">Ember Hangout</a>
+						</h4>
+						<br/>
+						<ul>
+							<li>Online meetup using Google Hangouts</li>
+							<li>17th June @ 6:00 pm UTC (2pm Ottawa)</li>
+							<li>Follow <a href="https://twitter.com/emberjshangout">@emberjshangout</a></li>
+						</ul>
+
+					</section>
+				</section>
+
+<!----- Section ------>
+
+				<section>
+					<section data-track="title">
+						<a target="_blank" class="test" href="http://emberweekly.com">
+							<img class="image" src="img/ember-weekly-logo.png" >
+						</a>
+						<p>Brought to you by <a target="_blank" href="http://emberweekly.com">Ember Weekly</a></p>
+					</section>
+
+					<section data-track="title">
+						<h4>Did I miss something?</h4>
+					</section>
+				</section>
+
+<!----- Section ------>
+
+				<!-- <section>
+					<section data-track="my-name">
+						<p>
+							<b>Owain Williams</b>
+						</p>
+					</section>
+					<section data-track="my-job">
+						<a target="_blank" class="test" href="http://toushay.com">
+							<img class="image" src="img/toushay-logo.png" >
+						</a>
+						<p>Front-End Engineer @ <a target="_blank" href="http://toushay.com">Toushay</a></p>
+					</section>
+					<section data-track="my-job">
+						<a target="_blank" class="test" href="http://emberweekly.com">
+							<img class="image" src="img/ember-weekly-logo.png" >
+						</a>
+						<p>Curator @ <a target="_blank" href="http://emberweekly.com">Ember Weekly</a></p>
+					</section>
+				</section> -->
+
+<!----- Section ------>
+
+				<section>
+					<section>
+						<h1>Thank You</h1>
+						<br/>
+						<small>This mess was thrown together by</small>
+						<p>Owain Williams</p>
+						<small><a target="_blank" href="http://www.twitter.com/owz">@owz</a></small>
+					</section>
+				</section>
+
+
+<!----- Section ------>
+				<section>
+					<section>
+						<h3>Hacker Hours</h3>
+					</section>
+					<section>
+						<h4>The Format</h4>
+						<br>
+						<ul>
+							<li>Informal and loose structure</li>
+							<ul>
+								<li>Write you first Ember app</li>
+								<li>Work on your Ember project</li>
+								<li>Try a new Ember library, tool or component</li>
+								<li>Create a pull request to Ember core</li>
+								<li>Work on your Ember Ottawa talk for next month! ;)</li>
+							</ul>
+						</ul>
+					</section>
+					<section>
+						<h4>Resources</h4>
+						<br>
+						<ul>
+							<li>Walkthrough building a ToDo app with the<a target="_blank" href="http://emberjs.com/guides/"> Emberjs.com Guides</a></li>
+							<li>Follow along with CodeSchool - <a href="https://www.codeschool.com/courses/warming-up-with-emberjs">Warming up with Ember</a> ($)</li>
+							<li>Checkout last month's <a href="https://github.com/EmberOttawa/ember-bloggr-demo/releases/tag/0.0.0">Ember Blogger Demo</a></li>
+						</ul>
+					</section>
+				</section>
+
+<!----- Section ------>
+
+				<section>
+					<section>
+						<h3>Next Meetup</h3>
+						<a target="_blank" class="test" href="http://www.meetup.com/Ember-js-Ottawa/">
+							<img class="image" src="img/ember-ottawa.jpeg" >
+						</a>
+						<p>TBC: Wednesday, 2nd July @ 6:30pm</p>
+						<p>Follow <a href="http://www.twitter.com/EmberOttawa">@EmberOttawa</a></p>
+					</section>
+					<section>
+						<h3>Call for Speakers</h3>
+						<br/>
+						<ul>
+							<li>Beginner or Advanced topic</li>
+							<li>Project your working on</li>
+							<li>Workshop/hack night</li>
+						</ul>
+					</section>
+				</section>
+
+<!----- Section ------>
+				<section>
+					<section>
+						<h3>Ottawa.js Meetup</h3>
+						<a target="_blank" class="test" href="http://www.meetup.com/Ottawa-JavaScript/">
+							<img class="image" src="img/ottawa-js-logo.jpeg" >
+						</a>
+						<p>Wednesday, June 11th @ 6:30pm</p>
+					</section>
+				</section>
+<!-- Section -->
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
